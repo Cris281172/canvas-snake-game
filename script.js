@@ -97,6 +97,7 @@ const snakeMoves = e => {
 const accident = () => {
     for(let i = 0; i < tails.length; i++){
         if(tails[i].x === snakeCoords.x && tails[i].y === snakeCoords.y){
+            alert(`Przegrałeś! Liczba zdobytego jedzenia: ${numberOfDinners}`);
             tails = [];
             numberOfDinners = 0;
         }
